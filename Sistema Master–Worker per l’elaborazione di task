@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+struct Task{
+    int id;
+    int durata_ms;
+    
+    Task(int task_id = 0, int durata = 100)
+    : id(task_id), durata_ms(durata) {}
+}
