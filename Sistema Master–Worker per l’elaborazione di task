@@ -3,19 +3,23 @@
 
 using namespace std;
     
-    
+        
 struct Task{
-int id;
-int durataMs;
+    int id;
+    int durata_ms;
 }
 
 struct Worker{
-int id;
+    int id;
     
-thread WorkerThread;
+    thread worker_thread;
 }
 
 struct Master{
-int id;
-int nWorkers;
+    int id;
+    int num_workers;
+}
+
+struct SharedData{
+    bool should_terminate
 }
